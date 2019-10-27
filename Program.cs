@@ -1,4 +1,5 @@
 ﻿using System;
+using static System.Console;
 
 namespace BonusApp
 {
@@ -6,7 +7,9 @@ namespace BonusApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Bonus aBonus = new Bonus("Rosa Caili", 1500000, '2');
+            WriteLine(aBonus.ToString());
+            ReadLine();
         }
     }
 }
