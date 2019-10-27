@@ -13,6 +13,7 @@ namespace BonusApp
         const double INCENTIVE_BONUS_RATE = .05;
         char salesCode;
         double baseBonus;
+        double incentiveBonus;
         double codeBonus;
         double totalBonus;
         bool badData;
@@ -59,10 +60,10 @@ namespace BonusApp
                 else
                 {
                     baseBonus = 1000000 * STANDARD_BONUS_RATE;
-                    baseBonus += (salesAmount - 1000000) * INCENTIVE_BONUS_RATE;
+                    incentiveBonus = (salesAmount - 1000000) * INCENTIVE_BONUS_RATE;
                 }
 
-                totalBonus = baseBonus + GetSalesCodeBonus();
+                totalBonus = baseBonus + incentiveBonus + GetSalesCodeBonus();
             }
         } // end SetBonus() method
 
@@ -96,6 +97,16 @@ namespace BonusApp
             }
             else
             {
+                str += string.Format("Salesperson name is {0}\n", SalespersonName);
+                str += string.Format("Sales amount is {0:c}\n", salesAmount);
+                str += string.Format("Standard bonus rate is {0:P}\n", STANDARD_BONUS_RATE);
+                str += string.Format("Incentive bonus rate is {0:P}\n", INCENTIVE_BONUS_RATE);
+                str += string.Format("Sales code is {0}\n", salesCode);
+                str += string.Format("Base bonus is {0:c}\n", baseBonus);
+                str += string.Format("Incentive bonus is {0:c}\n", incentiveBonus);
+                str += string.Format("Code bonus is {0:c}\n", codeBonus);
+                str += string.Format("Total bonus is {0:c}\n", totalBonus);
+                str += string.Format("Bad Data flag set to {0}\n", badData);
                 str += string.Format("Bonus is {0:c}\n", totalBonus);
             }
             return str;
