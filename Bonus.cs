@@ -65,5 +65,24 @@ namespace BonusApp
                 totalBonus = baseBonus + GetSalesCodeBonus();
             }
         }
+
+        public double GetSalesCodeBonus()
+        {
+            codeBonus = 0; // initialize value to prevent null return
+            switch (salesCode)
+            {
+                case '1': codeBonus = 2500;
+                    break;
+                case '2': codeBonus = 2000;
+                    break;
+                case '3': codeBonus = 1500;
+                    break;
+                case '4': codeBonus = 1000;
+                    break;
+                default: badData = true;
+                    break;
+            }
+            return codeBonus;
+        } // end GetSalesCodeBonus method
     }
 }
