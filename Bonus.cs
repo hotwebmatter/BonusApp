@@ -43,5 +43,27 @@ namespace BonusApp
         {
             set { salesCode = value; }
         }
+
+        private void SetBonus()
+        {
+            if (salesAmount <= 0)
+            {
+                badData = true;
+            }
+            else
+            {
+                if (salesAmount < 1000000)
+                {
+                    baseBonus = salesAmount * STANDARD_BONUS_RATE;
+                }
+                else
+                {
+                    baseBonus = 1000000 * STANDARD_BONUS_RATE;
+                    baseBonus += (salesAmount - 1000000) * INCENTIVE_BONUS_RATE;
+                }
+
+                totalBonus = baseBonus + GetSalesCodeBonus();
+            }
+        }
     }
 }
