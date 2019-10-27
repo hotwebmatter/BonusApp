@@ -9,7 +9,13 @@ namespace BonusApp
         // private properties
         string salespersonName;
         double salesAmount;
+        const double STANDARD_BONUS_RATE = .04;
+        const double INCENTIVE_BONUS_RATE = .05;
         char salesCode;
+        double baseBonus;
+        double codeBonus;
+        double totalBonus;
+        bool badData;
 
         public Bonus()
         {
