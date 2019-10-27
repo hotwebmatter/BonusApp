@@ -64,7 +64,7 @@ namespace BonusApp
 
                 totalBonus = baseBonus + GetSalesCodeBonus();
             }
-        }
+        } // end SetBonus() method
 
         public double GetSalesCodeBonus()
         {
@@ -83,6 +83,22 @@ namespace BonusApp
                     break;
             }
             return codeBonus;
-        } // end GetSalesCodeBonus method
+        } // end GetSalesCodeBonus() method
+
+        public override string ToString()
+        {
+            badData = false; // initialize flag
+            string str = string.Empty; // initialize string
+            SetBonus(); // execute method to calculate results
+            if (badData)
+            {
+                return "Bad Data";
+            }
+            else
+            {
+                str += string.Format("Bonus is {0:c}\n", totalBonus);
+            }
+            return str;
+        }
     }
 }
