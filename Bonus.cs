@@ -97,7 +97,7 @@ namespace BonusApp
             }
             else
             {
-                str += string.Format("Salesperson name is {0}\n", SalespersonName);
+                str += string.Format("Salesperson name is {0}\n", salespersonName);
                 str += string.Format("Sales amount is {0:c}\n", salesAmount);
                 str += string.Format("Standard bonus rate is {0:P}\n", STANDARD_BONUS_RATE);
                 str += string.Format("Incentive bonus rate is {0:P}\n", INCENTIVE_BONUS_RATE);
