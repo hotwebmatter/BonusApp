@@ -35,14 +35,17 @@ namespace BonusApp
         public string SalespersonName
         {
             set { salespersonName = value; }
+            get { return salespersonName; }
         }
         public double SalesAmount
         {
             set { salesAmount = value; }
+            get { return salesAmount; }
         }
         public char SalesCode
         {
             set { salesCode = value; }
+            get { return salesCode; }
         }
 
         private void SetBonus()
