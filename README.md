@@ -1,12 +1,37 @@
-# Colonial Bank Breakeven
+# BonusApp
 Eighth C# assignment submitted via Blackboard.
 
-This is a no-frills implementation of the bare specification.
+This is (mostly) a no-frills implementation of the specification.
+
+I did add some input validation to prevent errors that were actually
+causing the program to crash on bad input.
 
 The error handling could be more robust; for example it could
 tell you what type of bad data you have entered, and exactly why
-the input is not accepted.
+the input is not accepted, instead of just saying "Bad Data".
 
+## Example output
+```
+**************************************************
+        Bonus
+        Calculate bonus for sales employees
+        Matthew Obert
+        October 27 2019
+**************************************************
+This program will determine bonus for employees.
+
+You will be asked to enter sales name, sales,
+and employee code.
+
+**************************************************
+Enter salesperson name: Rosa Caili
+Enter sales amount (in dollars): 1500000
+Enter sales code (1, 2, 3, or 4 only): 2
+
+**************************************************
+
+Bonus is $67,000.00
+```
 The expected output for "Rosa Caili" seems to be off by $10,000.00 
 in the spec (it calls for a bonus of $77,000.00 but my algorithm
 calculates a bonus of only $67,000.00).
@@ -67,3 +92,6 @@ Bonus is $25,000.00
 Bad Data
 Bad Data
 ```
+
+Three out of the four test cases match the expected output
+in the problem specification. Only the first example is off.
