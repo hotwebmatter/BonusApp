@@ -58,7 +58,7 @@ namespace BonusApp
             aBonus.SalesCode = char.Parse(inputValue);
 
             // generate output
-            WriteLine("***********************************");
+            WriteLine("\n**************************************************\n");
             WriteLine(aBonus.ToString());
             ReadLine();
         }

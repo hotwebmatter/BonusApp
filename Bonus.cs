@@ -25,7 +25,7 @@ namespace BonusApp
 
         public Bonus(string name, double sales, char code)
         {
-            // overloaded constructor with arguments
+            // overloaded constructor with arguments (not used)
             salespersonName = name;
             salesAmount = sales;
             salesCode = code;
