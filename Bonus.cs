@@ -89,8 +89,11 @@ namespace BonusApp
             return codeBonus;
         } // end GetSalesCodeBonus() method
 
-        public override string ToString()
+        public string GetDebugInfo()
         {
+            // Verbose ToString() variant, not currently used in Main()
+            // Preserved here for discussion of debugging output
+            // See README.md for more details
             badData = false; // initialize flag
             string str = string.Empty; // initialize string
             SetBonus(); // execute method to calculate results
@@ -110,6 +113,21 @@ namespace BonusApp
                 str += string.Format("Code bonus is {0:c}\n", codeBonus);
                 str += string.Format("Total bonus is {0:c}\n", totalBonus);
                 str += string.Format("Bad Data flag set to {0}\n", badData);
+                str += string.Format("Bonus is {0:c}\n", totalBonus);
+            }
+            return str;
+        }
+        public override string ToString()
+        {
+            badData = false; // initialize flag
+            string str = string.Empty; // initialize string
+            SetBonus(); // execute method to calculate results
+            if (badData)
+            {
+                return "Bad Data";
+            }
+            else
+            {
                 str += string.Format("Bonus is {0:c}\n", totalBonus);
             }
             return str;
