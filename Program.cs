@@ -1,4 +1,13 @@
-﻿using System;
+﻿/**
+ * ######################################################
+ * ##    Programming Assignment #8                     ##
+ * ##    Developer: Matthew Obert                      ##
+ * ##    Date Submitted: October 27 2019               ##
+ * ##    Purpose: Use conditionals, input validation.  ##
+ * ######################################################
+ */
+
+using System;
 using static System.Console;
 
 namespace BonusApp
