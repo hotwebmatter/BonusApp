@@ -59,6 +59,7 @@ namespace BonusApp
 
             // generate output
             WriteLine("\n**************************************************\n");
+            // WriteLine(aBonus.GetDebugInfo());
             WriteLine(aBonus.ToString());
             ReadLine();
         }
