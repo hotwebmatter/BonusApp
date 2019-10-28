@@ -3,7 +3,7 @@
  * ##    Programming Assignment #8                     ##
  * ##    Developer: Matthew Obert                      ##
  * ##    Date Submitted: October 27 2019               ##
- * ##    Purpose: Use conditionals, input validation.  ##
+ * ##    Purpose: Use conditionals, validate input.    ##
  * ######################################################
  */
 
