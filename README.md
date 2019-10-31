@@ -50,13 +50,13 @@ namespace BonusApp
         static void Main(string[] args)
         {
             Bonus aBonus = new Bonus("Rosa Caili", 1500000, '2');
-            WriteLine(aBonus.ToString());
+            WriteLine(aBonus.GetDebugInfo());
             Bonus bBonus = new Bonus("David Ecco", 600000, '4');
-            WriteLine(bBonus.ToString());
+            WriteLine(bBonus.GetDebugInfo());
             Bonus cBonus = new Bonus("Paul Gorman", 0, '2');
-            WriteLine(cBonus.ToString());
+            WriteLine(cBonus.GetDebugInfo());
             Bonus dBonus = new Bonus("Ruth Basso", 40000, '7');
-            WriteLine(dBonus.ToString());
+            WriteLine(dBonus.GetDebugInfo());
             ReadLine();
         }
     }
