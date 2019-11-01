@@ -33,7 +33,9 @@ Enter sales code (1, 2, 3, or 4 only): 2
 Bonus is $67,000.00
 ```
 The expected output for "Rosa Caili" seems to be off by $10,000.00 
-in the spec (it calls for a bonus of $77,000.00 but my algorithm
+in the spec.
+
+(It calls for a bonus of $77,000.00 but my algorithm
 calculates a bonus of only $67,000.00).
 
 I'm confident that my algorithm is correct. See below:
